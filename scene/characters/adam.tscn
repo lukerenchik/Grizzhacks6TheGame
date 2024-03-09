@@ -1,0 +1,199 @@
+[gd_scene load_steps=14 format=3 uid="uid://dxaoeqxxsylkb"]
+
+[ext_resource type="Texture2D" uid="uid://cqi5hx661urvi" path="res://Modern tiles_Free/Characters_free/Adam_16x16.png" id="1_62w28"]
+
+[sub_resource type="Animation" id="Animation_a34ja"]
+resource_name = "walkRight"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [48, 49, 50, 51, 52, 53]
+}
+
+[sub_resource type="Animation" id="Animation_awna6"]
+resource_name = "walkLeft"
+length = 0.7
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [60, 61, 62, 63, 64, 65]
+}
+
+[sub_resource type="Animation" id="Animation_j7aw4"]
+resource_name = "walkFront"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [66, 67, 68, 69, 70, 71]
+}
+
+[sub_resource type="Animation" id="Animation_ibknf"]
+resource_name = "walkBack"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [54, 55, 56, 57, 58, 59]
+}
+
+[sub_resource type="Animation" id="Animation_7cglq"]
+resource_name = "idleRight"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_jtg47"]
+resource_name = "idleLeft"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_qjeb5"]
+resource_name = "idleFront"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_xh81x"]
+resource_name = "idleBack"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_yeqsa"]
+resource_name = "standUp"
+
+[sub_resource type="Animation" id="Animation_wxdu7"]
+resource_name = "sit"
+length = 0.7
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [121, 122, 121, 122, 123, 124, 125]
+}
+
+[sub_resource type="Animation" id="Animation_h2xio"]
+resource_name = "sitLeft"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [127, 128, 129, 130, 131]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_81adr"]
+_data = {
+"idleBack": SubResource("Animation_xh81x"),
+"idleFront": SubResource("Animation_qjeb5"),
+"idleLeft": SubResource("Animation_jtg47"),
+"idleRight": SubResource("Animation_7cglq"),
+"sitLeft": SubResource("Animation_h2xio"),
+"sitRight": SubResource("Animation_wxdu7"),
+"standUp": SubResource("Animation_yeqsa"),
+"walkBack": SubResource("Animation_j7aw4"),
+"walkFront": SubResource("Animation_ibknf"),
+"walkLeft": SubResource("Animation_awna6"),
+"walkRight": SubResource("Animation_a34ja")
+}
+
+[node name="Adam" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(-1, 0)
+texture = ExtResource("1_62w28")
+hframes = 24
+vframes = 7
+frame = 131
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_81adr")
+}
