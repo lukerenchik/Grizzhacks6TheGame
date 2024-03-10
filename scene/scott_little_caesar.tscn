@@ -1,0 +1,87 @@
+[gd_scene load_steps=12 format=3 uid="uid://cy7c7ahnou4dl"]
+
+[ext_resource type="Script" path="res://scripts/jenni_uwm.gd" id="1_t25bg"]
+[ext_resource type="Texture2D" uid="uid://rk2ogr11jtjk" path="res://art/Characters_free/scott_fleck_littlec_16x16.png" id="2_m1w41"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb46"]
+size = Vector2(110, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qee33"]
+atlas = ExtResource("2_m1w41")
+region = Rect2(288, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4twac"]
+atlas = ExtResource("2_m1w41")
+region = Rect2(304, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ba0fc"]
+atlas = ExtResource("2_m1w41")
+region = Rect2(320, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8pwfa"]
+atlas = ExtResource("2_m1w41")
+region = Rect2(336, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8w8cu"]
+atlas = ExtResource("2_m1w41")
+region = Rect2(352, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccgcg"]
+atlas = ExtResource("2_m1w41")
+region = Rect2(368, 32, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d7ror"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qee33")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4twac")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ba0fc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8pwfa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8w8cu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccgcg")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_aeivm"]
+script/source = "extends AnimatedSprite2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="Jenni" type="CharacterBody2D"]
+script = ExtResource("1_t25bg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(405, 428)
+shape = SubResource("RectangleShape2D_jkb46")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(409.75, 306.5)
+scale = Vector2(10.4062, 10.5312)
+sprite_frames = SubResource("SpriteFrames_d7ror")
+animation = &"new_animation"
+speed_scale = 1.4
+script = SubResource("GDScript_aeivm")

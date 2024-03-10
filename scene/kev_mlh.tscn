@@ -1,8 +1,73 @@
-[gd_scene load_steps=2 format=3 uid="uid://cyftdsg4yn72p"]
+[gd_scene load_steps=11 format=3 uid="uid://cyftdsg4yn72p"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ygrou"]
+[ext_resource type="Script" path="res://scripts/kev_mlh.gd" id="1_6nle3"]
+[ext_resource type="Texture2D" uid="uid://crlpb7un3txic" path="res://art/Characters_free/kev_mlh_16x16.png" id="2_xeqcm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q2112"]
+size = Vector2(12.5, 8.5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_krwcn"]
+atlas = ExtResource("2_xeqcm")
+region = Rect2(288, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ky22p"]
+atlas = ExtResource("2_xeqcm")
+region = Rect2(304, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6uy2m"]
+atlas = ExtResource("2_xeqcm")
+region = Rect2(320, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e3x3q"]
+atlas = ExtResource("2_xeqcm")
+region = Rect2(336, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eo72a"]
+atlas = ExtResource("2_xeqcm")
+region = Rect2(352, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mn8j3"]
+atlas = ExtResource("2_xeqcm")
+region = Rect2(368, 32, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kae52"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_krwcn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ky22p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6uy2m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e3x3q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eo72a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mn8j3")
+}],
+"loop": true,
+"name": &"idle_front",
+"speed": 5.0
+}]
 
 [node name="kev_mlh" type="CharacterBody2D"]
+script = ExtResource("1_6nle3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_ygrou")
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_q2112")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(176.5, 151.5)
+scale = Vector2(4.9375, 4.96875)
+sprite_frames = SubResource("SpriteFrames_kae52")
+animation = &"idle_front"
+frame_progress = 0.707828
+speed_scale = 1.3
