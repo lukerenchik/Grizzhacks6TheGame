@@ -1,0 +1,11 @@
+~ this_is_a_node_title
+
+Kelly: Hi!.
+Kelly: What's up?
+- Ask about Project
+	Kelly: We feed your heart rate data and upcoming song into a neural net, and it will predict how that song will affect your heart rate.
+- Why do you look like an Octopus?
+	Kelly: Why don't you look like an octopus?
+- End the conversation => END
+
+=> END
