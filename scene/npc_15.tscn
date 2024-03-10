@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3 uid="uid://c05yfb02020m1"]
+
+[ext_resource type="Script" path="res://scripts/npc_eli.gd" id="1_cu1iw"]
+[ext_resource type="Texture2D" uid="uid://bflvumtwp3lwe" path="res://art/Characters_free/Amelia_16x16.png" id="2_pu13x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4n8i8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4x4a1"]
+atlas = ExtResource("2_pu13x")
+region = Rect2(288, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_axa2g"]
+atlas = ExtResource("2_pu13x")
+region = Rect2(304, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4g7s"]
+atlas = ExtResource("2_pu13x")
+region = Rect2(320, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4ugs"]
+atlas = ExtResource("2_pu13x")
+region = Rect2(336, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_unm4m"]
+atlas = ExtResource("2_pu13x")
+region = Rect2(352, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yb2a5"]
+atlas = ExtResource("2_pu13x")
+region = Rect2(368, 32, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4apm6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4x4a1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_axa2g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4g7s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r4ugs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_unm4m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yb2a5")
+}],
+"loop": true,
+"name": &"idle_front",
+"speed": 5.0
+}]
+
+[node name="npc_1" type="CharacterBody2D"]
+script = ExtResource("1_cu1iw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4n8i8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_4apm6")
+animation = &"idle_front"
