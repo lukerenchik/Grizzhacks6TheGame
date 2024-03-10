@@ -1,0 +1,9 @@
+~ this_is_a_node_title
+
+Anna: [[Hi|Hello|Howdy]].
+- Ask About Project
+	Anna: We are building an AI powered notes app, with music!
+- End the conversation => END
+Anna: Good Luck
+
+=> END
