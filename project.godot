@@ -11,9 +11,22 @@ config_version=5
 [application]
 
 config/name="Grizzhacks 6: The Game"
+run/main_scene="res://scene/kev_mlh.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 
 [dotnet]
 
 project/assembly_name="Grizzhacks 6- The Game"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/ez_dialogue/plugin.cfg")
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://dialogue/main.dialogue")
