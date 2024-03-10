@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://cror8rqg6tgur"]
+[gd_scene load_steps=55 format=3 uid="uid://cror8rqg6tgur"]
 
 [ext_resource type="Texture2D" uid="uid://dwnlxges67bf2" path="res://Modern_Office_Revamped/1_Room_Builder_Office/Room_Builder_Office_16x16.png" id="1_xp63w"]
 [ext_resource type="Texture2D" uid="uid://con7dkpxyt2k0" path="res://Modern_Office_Revamped/2_Modern_Office_Black_Shadow/Modern_Office_Black_Shadow.png" id="2_yhynh"]
@@ -16,6 +16,23 @@
 [ext_resource type="Texture2D" uid="uid://cgdihmhcvu1m6" path="res://moderninteriors-win/1_Interiors/16x16/Theme_Sorter/20_Japanese_interiors.png" id="9_pwqka"]
 [ext_resource type="Texture2D" uid="uid://bvsdy5kyk3y80" path="res://moderninteriors-win/1_Interiors/16x16/Theme_Sorter/12_Kitchen_16x16.png" id="11_4jb6b"]
 [ext_resource type="PackedScene" uid="uid://0wf7w3rgxbk6" path="res://scene/player.tscn" id="16_2kmvd"]
+[ext_resource type="PackedScene" uid="uid://owwb30koaa14" path="res://scene/npc_eli.tscn" id="17_odge3"]
+[ext_resource type="PackedScene" uid="uid://b4kkr8m7u8vh7" path="res://scene/npc_9.tscn" id="18_i206v"]
+[ext_resource type="PackedScene" uid="uid://bogym13jepxy6" path="res://scene/npc_3.tscn" id="19_xv3j7"]
+[ext_resource type="PackedScene" uid="uid://118jfai43gqu" path="res://scene/npc_10.tscn" id="20_jfwnl"]
+[ext_resource type="PackedScene" uid="uid://c1463nggq2xm8" path="res://scene/npc_20.tscn" id="21_kbdvj"]
+[ext_resource type="PackedScene" uid="uid://bfhh17hsahesd" path="res://scene/npc_14.tscn" id="22_dyy21"]
+[ext_resource type="PackedScene" uid="uid://cwnql1hgea4ib" path="res://scene/npc_13.tscn" id="23_iqu0s"]
+[ext_resource type="PackedScene" uid="uid://dnle7h1u7e1mj" path="res://scene/npc_12.tscn" id="24_cmypi"]
+[ext_resource type="PackedScene" uid="uid://c05yfb02020m1" path="res://scene/npc_15.tscn" id="25_cbaro"]
+[ext_resource type="PackedScene" uid="uid://ddkna82pm35ga" path="res://scene/npc_16.tscn" id="26_1iqig"]
+[ext_resource type="PackedScene" uid="uid://oy6flluoddvr" path="res://scene/npc_21.tscn" id="27_vyau2"]
+[ext_resource type="PackedScene" uid="uid://gmb2tga60t3r" path="res://scene/npc_18.tscn" id="28_odcde"]
+[ext_resource type="PackedScene" uid="uid://cggawpp3ylx5g" path="res://scene/npc_22.tscn" id="29_twrdp"]
+[ext_resource type="PackedScene" uid="uid://dww0yvhp8uakj" path="res://scene/npc_23.tscn" id="30_hhl1h"]
+[ext_resource type="PackedScene" uid="uid://bq1tcx26nd68t" path="res://scene/npc_24.tscn" id="31_hdj4s"]
+[ext_resource type="PackedScene" uid="uid://sxcptyhqiw0d" path="res://scene/npc_25.tscn" id="32_t5tsv"]
+[ext_resource type="PackedScene" uid="uid://chbopm0jbk5rq" path="res://scene/npc_26.tscn" id="33_c757h"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_a8bpa"]
 tile_data = PackedInt32Array(0, 65536, 11, 65536, 327680, 11, 131072, 327680, 11, 196608, 65536, 805306379)
@@ -19779,3 +19796,87 @@ position = Vector2(304, 8)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(5.25, 5.25)
+
+[node name="npc_1" parent="." instance=ExtResource("17_odge3")]
+position = Vector2(520, 8)
+
+[node name="npc_9" parent="." instance=ExtResource("18_i206v")]
+position = Vector2(552, 8)
+
+[node name="npc_3" parent="." instance=ExtResource("19_xv3j7")]
+z_index = 4
+position = Vector2(520, 40)
+
+[node name="npc_4" parent="." instance=ExtResource("19_xv3j7")]
+position = Vector2(1456, 824)
+
+[node name="npc_5" parent="." instance=ExtResource("19_xv3j7")]
+position = Vector2(2032, -360)
+
+[node name="npc_10" parent="." instance=ExtResource("20_jfwnl")]
+position = Vector2(16, -80)
+
+[node name="npc_11" parent="." instance=ExtResource("20_jfwnl")]
+z_index = 1
+position = Vector2(1424, 824)
+
+[node name="npc_20" parent="." instance=ExtResource("21_kbdvj")]
+z_index = 4
+position = Vector2(1368, -1056)
+
+[node name="npc_14" parent="." instance=ExtResource("22_dyy21")]
+position = Vector2(120, -80)
+
+[node name="npc_13" parent="." instance=ExtResource("23_iqu0s")]
+position = Vector2(552, 112)
+
+[node name="npc_12" parent="." instance=ExtResource("20_jfwnl")]
+position = Vector2(1688, 712)
+
+[node name="npc_15" parent="." instance=ExtResource("24_cmypi")]
+z_index = 4
+position = Vector2(2960, -312)
+
+[node name="npc_16" parent="." instance=ExtResource("25_cbaro")]
+position = Vector2(2488, -328)
+
+[node name="npc_17" parent="." instance=ExtResource("25_cbaro")]
+position = Vector2(3032, -344)
+
+[node name="npc_18" parent="." instance=ExtResource("26_1iqig")]
+position = Vector2(1320, -1184)
+
+[node name="npc_21" parent="." instance=ExtResource("27_vyau2")]
+z_index = 4
+position = Vector2(1352, -1400)
+
+[node name="npc_19" parent="." instance=ExtResource("28_odcde")]
+position = Vector2(1304, -1080)
+
+[node name="npc_22" parent="." instance=ExtResource("29_twrdp")]
+position = Vector2(1352, -1848)
+
+[node name="npc_23" parent="." instance=ExtResource("30_hhl1h")]
+position = Vector2(1416, -1736)
+
+[node name="npc_24" parent="." instance=ExtResource("30_hhl1h")]
+position = Vector2(2008, -1184)
+
+[node name="npc_25" parent="." instance=ExtResource("31_hdj4s")]
+position = Vector2(1944, 864)
+
+[node name="npc_26" parent="." instance=ExtResource("32_t5tsv")]
+position = Vector2(2488, 840)
+
+[node name="npc_27" parent="." instance=ExtResource("32_t5tsv")]
+z_index = 2
+position = Vector2(80, -776)
+
+[node name="npc_28" parent="." instance=ExtResource("32_t5tsv")]
+position = Vector2(-168, -1312)
+
+[node name="npc_29" parent="." instance=ExtResource("33_c757h")]
+position = Vector2(208, -944)
+
+[node name="npc_30" parent="." instance=ExtResource("33_c757h")]
+position = Vector2(-168, -1472)

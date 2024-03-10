@@ -1,54 +1,40 @@
-[gd_scene load_steps=11 format=3 uid="uid://c1463nggq2xm8"]
+[gd_scene load_steps=9 format=3 uid="uid://c1463nggq2xm8"]
 
 [ext_resource type="Script" path="res://scripts/npc_20.gd" id="1_v0eb7"]
-[ext_resource type="Texture2D" uid="uid://do0kkkmqkom02" path="res://art/Characters_free/participant_3.png" id="2_aah4g"]
+[ext_resource type="Texture2D" uid="uid://dnvn5sawiehga" path="res://Octopus Sprite Sheet.png" id="2_4otwp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4n8i8"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qise2"]
-atlas = ExtResource("2_aah4g")
-region = Rect2(288, 32, 16, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_in6dn"]
+atlas = ExtResource("2_4otwp")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_01bkf"]
-atlas = ExtResource("2_aah4g")
-region = Rect2(304, 32, 16, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_s835d"]
+atlas = ExtResource("2_4otwp")
+region = Rect2(32, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qipy0"]
-atlas = ExtResource("2_aah4g")
-region = Rect2(320, 32, 16, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0iur"]
+atlas = ExtResource("2_4otwp")
+region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_t5vjb"]
-atlas = ExtResource("2_aah4g")
-region = Rect2(336, 32, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q18t2"]
-atlas = ExtResource("2_aah4g")
-region = Rect2(352, 32, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8n7xy"]
-atlas = ExtResource("2_aah4g")
-region = Rect2(368, 32, 16, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_puklt"]
+atlas = ExtResource("2_4otwp")
+region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4apm6"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qise2")
+"texture": SubResource("AtlasTexture_in6dn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_01bkf")
+"texture": SubResource("AtlasTexture_s835d")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qipy0")
+"texture": SubResource("AtlasTexture_d0iur")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_t5vjb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q18t2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8n7xy")
+"texture": SubResource("AtlasTexture_puklt")
 }],
 "loop": true,
 "name": &"idle_front",
@@ -65,3 +51,5 @@ shape = SubResource("RectangleShape2D_4n8i8")
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_4apm6")
 animation = &"idle_front"
+frame = 3
+frame_progress = 1.0

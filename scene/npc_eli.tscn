@@ -1,9 +1,18 @@
-[gd_scene load_steps=11 format=3 uid="uid://owwb30koaa14"]
+[gd_scene load_steps=14 format=3 uid="uid://owwb30koaa14"]
 
 [ext_resource type="Script" path="res://scripts/npc_eli.gd" id="1_g81b7"]
 [ext_resource type="Texture2D" uid="uid://urph3thcyu7y" path="res://Saved Characters/eliFINAL.png" id="2_4gew5"]
+[ext_resource type="Texture2D" uid="uid://dg0n808ny5yku" path="res://art/Characters_free/participant_1_16x16.png" id="2_qvbd7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4n8i8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ob1r"]
+atlas = ExtResource("2_qvbd7")
+region = Rect2(352, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ik2gi"]
+atlas = ExtResource("2_qvbd7")
+region = Rect2(368, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hxdv1"]
 atlas = ExtResource("2_4gew5")
@@ -32,6 +41,12 @@ region = Rect2(368, 32, 16, 32)
 [sub_resource type="SpriteFrames" id="SpriteFrames_4apm6"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ob1r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ik2gi")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_hxdv1")
 }, {
