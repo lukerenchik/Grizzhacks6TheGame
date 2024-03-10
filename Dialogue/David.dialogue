@@ -1,0 +1,9 @@
+~ this_is_a_node_title
+
+David: [[Hi|Hello|Howdy]], redditors.
+- Ask About Project
+	David: We are building a GPT model that will parse subreddit responses to increase knowledge on niche hobbies.
+- End the conversation => END
+David: Bye!
+
+=> END

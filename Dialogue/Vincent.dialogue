@@ -1,0 +1,9 @@
+~ this_is_a_node_title
+
+Vincent: [[Hi|Hello|Howdy]], howya doing?
+- Ask About Project
+	Vincent: We are building an LLM powered receipe generator that will link with your pantry to help synthesize effective meals with any ingredients.
+- End the conversation => END
+Vincent: Bye.
+
+=> END

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://ovopidwidapm"
+path="res://.godot/imported/Leon.dialogue-d7d4aa942215eec522a500d31f685788.tres"
+
+[deps]
+
+source_file="res://Dialogue/Leon.dialogue"
+dest_files=["res://.godot/imported/Leon.dialogue-d7d4aa942215eec522a500d31f685788.tres"]
+
+[params]
+
+defaults=true

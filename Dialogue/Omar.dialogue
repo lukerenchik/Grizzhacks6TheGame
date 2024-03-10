@@ -1,0 +1,9 @@
+~ this_is_a_node_title
+
+Omar: Heyo.
+- Ask About Project
+	Omar: Were working on a raspberry pi, but I think we need to flash linux on it. Would you know where to find a bootloader?
+
+- End the conversation => END
+
+=> END
