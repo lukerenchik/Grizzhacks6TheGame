@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://rv06ut6tdpcb"
+path="res://.godot/imported/Huda.dialogue-e4712300936150c6e89a73a7fcfc338a.tres"
+
+[deps]
+
+source_file="res://Dialogue/Huda.dialogue"
+dest_files=["res://.godot/imported/Huda.dialogue-e4712300936150c6e89a73a7fcfc338a.tres"]
+
+[params]
+
+defaults=true

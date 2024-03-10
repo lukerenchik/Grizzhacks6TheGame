@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bd1e3ri16e2gp"
+path="res://.godot/imported/Kelly.dialogue-96c26dcccebb01e91a60dc16cbeb9f89.tres"
+
+[deps]
+
+source_file="res://Dialogue/Kelly.dialogue"
+dest_files=["res://.godot/imported/Kelly.dialogue-96c26dcccebb01e91a60dc16cbeb9f89.tres"]
+
+[params]
+
+defaults=true
