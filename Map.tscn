@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://cror8rqg6tgur"]
+[gd_scene load_steps=42 format=3 uid="uid://cror8rqg6tgur"]
 
 [ext_resource type="Texture2D" uid="uid://dwnlxges67bf2" path="res://Modern_Office_Revamped/1_Room_Builder_Office/Room_Builder_Office_16x16.png" id="1_xp63w"]
 [ext_resource type="Texture2D" uid="uid://con7dkpxyt2k0" path="res://Modern_Office_Revamped/2_Modern_Office_Black_Shadow/Modern_Office_Black_Shadow.png" id="2_yhynh"]
@@ -17,6 +17,9 @@
 [ext_resource type="Texture2D" uid="uid://bvsdy5kyk3y80" path="res://moderninteriors-win/1_Interiors/16x16/Theme_Sorter/12_Kitchen_16x16.png" id="11_4jb6b"]
 [ext_resource type="PackedScene" uid="uid://0wf7w3rgxbk6" path="res://scene/player.tscn" id="16_2kmvd"]
 [ext_resource type="PackedScene" uid="uid://pfm1qu2lysir" path="res://scene/stairs.tscn" id="17_ifbrv"]
+[ext_resource type="Script" path="res://scripts/stairsMainF2.gd" id="18_5emio"]
+[ext_resource type="Script" path="res://scripts/stairsNorthF2.gd" id="19_l6ujq"]
+[ext_resource type="Script" path="res://scripts/stairsNorthF3.gd" id="20_0dy5e"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_a8bpa"]
 tile_data = PackedInt32Array(0, 65536, 11, 65536, 327680, 11, 131072, 327680, 11, 196608, 65536, 805306379)
@@ -19713,9 +19716,6 @@ pattern_2 = SubResource("TileMapPattern_8miqu")
 [sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_juj12"]
 points = PackedVector2Array(0, 0)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hhrbf"]
-size = Vector2(16, 20)
-
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -19752,15 +19752,19 @@ z_index = 4
 position = Vector2(-329, -901)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-zoom = Vector2(4.62, 4.62)
+zoom = Vector2(3.365, 3.365)
 
-[node name="stairsMain1-2" parent="." instance=ExtResource("17_ifbrv")]
-position = Vector2(152, -971)
+[node name="stairsMainF1" parent="." instance=ExtResource("17_ifbrv")]
+position = Vector2(152, -974)
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(145, -978)
-metadata/_edit_group_ = true
+[node name="stairsMainF2" parent="." instance=ExtResource("17_ifbrv")]
+position = Vector2(1472, -1000)
+script = ExtResource("18_5emio")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(7, 2)
-shape = SubResource("RectangleShape2D_hhrbf")
+[node name="stairsNorthF2" parent="." instance=ExtResource("17_ifbrv")]
+position = Vector2(1508, -1907)
+script = ExtResource("19_l6ujq")
+
+[node name="stairsNorthF3" parent="." instance=ExtResource("17_ifbrv")]
+position = Vector2(257, 46)
+script = ExtResource("20_0dy5e")
