@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cror8rqg6tgur"]
+[gd_scene load_steps=24 format=3 uid="uid://cror8rqg6tgur"]
 
 [ext_resource type="Texture2D" uid="uid://dwnlxges67bf2" path="res://Modern_Office_Revamped/1_Room_Builder_Office/Room_Builder_Office_16x16.png" id="1_xp63w"]
 [ext_resource type="Texture2D" uid="uid://con7dkpxyt2k0" path="res://Modern_Office_Revamped/2_Modern_Office_Black_Shadow/Modern_Office_Black_Shadow.png" id="2_yhynh"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://w254hospoj4b" path="res://moderninteriors-win/1_Interiors/16x16/Theme_Sorter/13_Conference_Hall_16x16.png" id="7_e37x0"]
 [ext_resource type="Texture2D" uid="uid://b1a7apmkotj0d" path="res://moderninteriors-win/1_Interiors/16x16/Theme_Sorter/14_Basement_16x16.png" id="8_n4jtv"]
 [ext_resource type="Texture2D" uid="uid://cgdihmhcvu1m6" path="res://moderninteriors-win/1_Interiors/16x16/Theme_Sorter/20_Japanese_interiors.png" id="9_pwqka"]
+[ext_resource type="PackedScene" uid="uid://0wf7w3rgxbk6" path="res://scene/player.tscn" id="10_a2b3c"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_a8bpa"]
 tile_data = PackedInt32Array(0, 65536, 11, 65536, 327680, 11, 131072, 327680, 11, 196608, 65536, 805306379)
@@ -4027,3 +4028,8 @@ layer_2/tile_data = PackedInt32Array(458785, 851969, 28, 524324, 524289, 2684354
 layer_3/name = "Behind Table Chairs"
 layer_3/tile_data = PackedInt32Array(65568, 196611, 30, 65570, 196611, 30, 131107, 196611, 30, 393250, 131074, 11, 458786, 131074, 12, 131100, 65537, 1610612754, 196636, 1, 1610612754, 131099, 65537, 1610612753, 196635, 1, 1610612753, 327708, 65537, 1610612754, 393244, 1, 1610612754, 327707, 65537, 1610612753, 393243, 1, 1610612753, 524316, 65537, 1610612754, 589852, 1, 1610612754, 524315, 65537, 1610612753, 589851, 1, 1610612753, -458735, 2, 1610612757)
 metadata/_edit_group_ = true
+
+[node name="player" parent="." instance=ExtResource("10_a2b3c")]
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+zoom = Vector2(5.07, 5.07)
