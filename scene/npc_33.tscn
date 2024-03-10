@@ -1,32 +1,32 @@
-[gd_scene load_steps=11 format=3 uid="uid://b4kkr8m7u8vh7"]
+[gd_scene load_steps=11 format=3 uid="uid://oraxeddtoecu"]
 
-[ext_resource type="Script" path="res://scripts/npc_eli.gd" id="1_hfm56"]
-[ext_resource type="Texture2D" uid="uid://bflvumtwp3lwe" path="res://art/Characters_free/Amelia_16x16.png" id="2_esebn"]
+[ext_resource type="Script" path="res://scripts/npc_eli.gd" id="1_ty4a3"]
+[ext_resource type="Texture2D" uid="uid://bflvumtwp3lwe" path="res://art/Characters_free/Amelia_16x16.png" id="2_0axqk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4n8i8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4x4a1"]
-atlas = ExtResource("2_esebn")
+atlas = ExtResource("2_0axqk")
 region = Rect2(288, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_axa2g"]
-atlas = ExtResource("2_esebn")
+atlas = ExtResource("2_0axqk")
 region = Rect2(304, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j4g7s"]
-atlas = ExtResource("2_esebn")
+atlas = ExtResource("2_0axqk")
 region = Rect2(320, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r4ugs"]
-atlas = ExtResource("2_esebn")
+atlas = ExtResource("2_0axqk")
 region = Rect2(336, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_unm4m"]
-atlas = ExtResource("2_esebn")
+atlas = ExtResource("2_0axqk")
 region = Rect2(352, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yb2a5"]
-atlas = ExtResource("2_esebn")
+atlas = ExtResource("2_0axqk")
 region = Rect2(368, 32, 16, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4apm6"]
@@ -55,8 +55,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="npc_9" type="CharacterBody2D"]
-script = ExtResource("1_hfm56")
+[node name="npc_1" type="CharacterBody2D"]
+script = ExtResource("1_ty4a3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_4n8i8")
