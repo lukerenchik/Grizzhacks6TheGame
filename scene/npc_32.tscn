@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://bnki5sc6vmsuu"]
 
-[ext_resource type="Script" path="res://scripts/npc_eli.gd" id="1_qkn58"]
+[ext_resource type="Script" path="res://scripts/npc_32.gd" id="1_ikgq7"]
 [ext_resource type="Texture2D" uid="uid://bflvumtwp3lwe" path="res://art/Characters_free/Amelia_16x16.png" id="2_j4gld"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4n8i8"]
@@ -55,8 +55,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="npc_1" type="CharacterBody2D"]
-script = ExtResource("1_qkn58")
+[node name="npc_32" type="CharacterBody2D"]
+script = ExtResource("1_ikgq7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_4n8i8")

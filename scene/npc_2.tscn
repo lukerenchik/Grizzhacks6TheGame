@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://b5mnbr2s83fem"]
 
-[ext_resource type="Script" path="res://scripts/npc_eli.gd" id="1_0cj6l"]
+[ext_resource type="Script" path="res://scripts/npc_2.gd" id="1_f3ouf"]
 [ext_resource type="Texture2D" uid="uid://do0kkkmqkom02" path="res://art/Characters_free/participant_3.png" id="2_6a5wj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4n8i8"]
@@ -55,8 +55,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="npc_1" type="CharacterBody2D"]
-script = ExtResource("1_0cj6l")
+[node name="npc_2" type="CharacterBody2D"]
+script = ExtResource("1_f3ouf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_4n8i8")
