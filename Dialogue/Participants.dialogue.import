@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://c2cg2y55emnel"
+path="res://.godot/imported/Participants.dialogue-5758adb697de2ba858d5fbc11bed9c3b.tres"
+
+[deps]
+
+source_file="res://Dialogue/Participants.dialogue"
+dest_files=["res://.godot/imported/Participants.dialogue-5758adb697de2ba858d5fbc11bed9c3b.tres"]
+
+[params]
+
+defaults=true

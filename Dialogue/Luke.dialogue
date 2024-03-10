@@ -1,0 +1,11 @@
+~ this_is_a_node_title
+
+Luke: [[Hi|Hello|Howdy]], how's it going?
+Luke: Here are some choices.
+- Ask About Project
+	Luke: We are making a computer vision system that gives audio cues to a visually impaired individual about their environment.
+- Ask About Kettering
+	Luke: ... 
+- End the conversation => END
+
+=> END
