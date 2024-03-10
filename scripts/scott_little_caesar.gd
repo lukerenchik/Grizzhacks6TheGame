@@ -9,4 +9,3 @@ func _on_Player_interact():
 	$AnimatedSprite2D.stop()
 
 	$AnimatedSprite2D.play("idle_front")
-

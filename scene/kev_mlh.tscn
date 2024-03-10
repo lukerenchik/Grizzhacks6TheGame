@@ -69,4 +69,5 @@ position = Vector2(176.5, 151.5)
 scale = Vector2(4.9375, 4.96875)
 sprite_frames = SubResource("SpriteFrames_kae52")
 animation = &"idle_front"
+frame_progress = 0.707828
 speed_scale = 1.3
