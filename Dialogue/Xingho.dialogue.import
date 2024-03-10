@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://h1ohoqeux55b"
+path="res://.godot/imported/Xingho.dialogue-96dca71ecf97c27d51867370c1d6c395.tres"
+
+[deps]
+
+source_file="res://Dialogue/Xingho.dialogue"
+dest_files=["res://.godot/imported/Xingho.dialogue-96dca71ecf97c27d51867370c1d6c395.tres"]
+
+[params]
+
+defaults=true

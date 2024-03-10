@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://ctkwc8k3axijp"
+path="res://.godot/imported/Alexa.dialogue-9ab43e8ca45925bb46796505a570332b.tres"
+
+[deps]
+
+source_file="res://Dialogue/Alexa.dialogue"
+dest_files=["res://.godot/imported/Alexa.dialogue-9ab43e8ca45925bb46796505a570332b.tres"]
+
+[params]
+
+defaults=true

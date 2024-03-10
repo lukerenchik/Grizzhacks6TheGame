@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://cror8rqg6tgur"]
+[gd_scene load_steps=46 format=3 uid="uid://cror8rqg6tgur"]
 
 [ext_resource type="Texture2D" uid="uid://dwnlxges67bf2" path="res://Modern_Office_Revamped/1_Room_Builder_Office/Room_Builder_Office_16x16.png" id="1_xp63w"]
 [ext_resource type="Texture2D" uid="uid://con7dkpxyt2k0" path="res://Modern_Office_Revamped/2_Modern_Office_Black_Shadow/Modern_Office_Black_Shadow.png" id="2_yhynh"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://cgdihmhcvu1m6" path="res://moderninteriors-win/1_Interiors/16x16/Theme_Sorter/20_Japanese_interiors.png" id="9_pwqka"]
 [ext_resource type="Texture2D" uid="uid://bvsdy5kyk3y80" path="res://moderninteriors-win/1_Interiors/16x16/Theme_Sorter/12_Kitchen_16x16.png" id="11_4jb6b"]
 [ext_resource type="PackedScene" uid="uid://0wf7w3rgxbk6" path="res://scene/player.tscn" id="16_2kmvd"]
+[ext_resource type="Texture2D" uid="uid://cnx55dqk3u2l6" path="res://Saved Characters/rando1.png" id="17_6k51h"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_a8bpa"]
 tile_data = PackedInt32Array(0, 65536, 11, 65536, 327680, 11, 131072, 327680, 11, 196608, 65536, 805306379)
@@ -19742,6 +19743,56 @@ pattern_2 = SubResource("TileMapPattern_8miqu")
 [sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_juj12"]
 points = PackedVector2Array(0, 0)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_biw3c"]
+atlas = ExtResource("17_6k51h")
+region = Rect2(288, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pylo7"]
+atlas = ExtResource("17_6k51h")
+region = Rect2(304, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vghos"]
+atlas = ExtResource("17_6k51h")
+region = Rect2(320, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lbyks"]
+atlas = ExtResource("17_6k51h")
+region = Rect2(336, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pkccl"]
+atlas = ExtResource("17_6k51h")
+region = Rect2(352, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dyx0p"]
+atlas = ExtResource("17_6k51h")
+region = Rect2(368, 32, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7y0w3"]
+animations = [{
+"frames": [{
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_biw3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pylo7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vghos")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lbyks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pkccl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dyx0p")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -19779,3 +19830,10 @@ position = Vector2(304, 8)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(5.25, 5.25)
+
+[node name="NPC" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC"]
+sprite_frames = SubResource("SpriteFrames_7y0w3")
+animation = &"idle"
+frame_progress = 0.372235

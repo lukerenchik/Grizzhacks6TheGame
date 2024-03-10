@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://byws5gt60rwlu"
+path="res://.godot/imported/Vincent.dialogue-9ece98ce1931e4ae0bd7247d6e33ce6d.tres"
+
+[deps]
+
+source_file="res://Dialogue/Vincent.dialogue"
+dest_files=["res://.godot/imported/Vincent.dialogue-9ece98ce1931e4ae0bd7247d6e33ce6d.tres"]
+
+[params]
+
+defaults=true

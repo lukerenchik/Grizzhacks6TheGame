@@ -1,0 +1,11 @@
+~ this_is_a_node_title
+
+Eli: [[Hi|Hello|Hey]], how goes it?
+- Ask About Project
+	Eli: We are building finite automata in Minecraft, you know, like the computers.
+- Ask About Wizard Powers
+	Eli: I don't know what you are talking about, it's just math.
+- End the conversation => END
+Eli: Best of Skill!
+
+=> END
