@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://chaif724bo10y"]
+
+[ext_resource type="Script" path="res://scripts/scott_little_caesar.gd" id="1_8d67b"]
+[ext_resource type="Texture2D" uid="uid://d08jdsjxoinhw" path="res://art/Characters_free/matt_john_oucu_16x16.png" id="2_2efn2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rv4d"]
+size = Vector2(52.25, 24.75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwkeo"]
+atlas = ExtResource("2_2efn2")
+region = Rect2(288, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xan2v"]
+atlas = ExtResource("2_2efn2")
+region = Rect2(304, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jwqhe"]
+atlas = ExtResource("2_2efn2")
+region = Rect2(320, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtdrt"]
+atlas = ExtResource("2_2efn2")
+region = Rect2(336, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yivi1"]
+atlas = ExtResource("2_2efn2")
+region = Rect2(352, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4puw"]
+atlas = ExtResource("2_2efn2")
+region = Rect2(368, 32, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_shoyp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwkeo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xan2v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jwqhe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jtdrt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yivi1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4puw")
+}],
+"loop": true,
+"name": &"idle_front",
+"speed": 5.0
+}]
+
+[node name="matt_oucu" type="CharacterBody2D"]
+texture_filter = 1
+script = ExtResource("1_8d67b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(357.875, 184.625)
+shape = SubResource("RectangleShape2D_4rv4d")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(358, 151)
+scale = Vector2(3.1875, 2.90625)
+sprite_frames = SubResource("SpriteFrames_shoyp")
+animation = &"idle_front"
+speed_scale = 1.3

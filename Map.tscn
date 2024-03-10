@@ -19829,6 +19829,7 @@ z_index = 4
 position = Vector2(304, 8)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
+
 zoom = Vector2(5.25, 5.25)
 
 [node name="NPC" type="CharacterBody2D" parent="."]
@@ -19837,3 +19838,4 @@ zoom = Vector2(5.25, 5.25)
 sprite_frames = SubResource("SpriteFrames_7y0w3")
 animation = &"idle"
 frame_progress = 0.372235
+
