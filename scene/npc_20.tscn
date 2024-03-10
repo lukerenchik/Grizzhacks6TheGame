@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://c1463nggq2xm8"]
+
+[ext_resource type="Script" path="res://scripts/npc_20.gd" id="1_v0eb7"]
+[ext_resource type="Texture2D" uid="uid://dnvn5sawiehga" path="res://Octopus Sprite Sheet.png" id="2_4otwp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4n8i8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_in6dn"]
+atlas = ExtResource("2_4otwp")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s835d"]
+atlas = ExtResource("2_4otwp")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0iur"]
+atlas = ExtResource("2_4otwp")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_puklt"]
+atlas = ExtResource("2_4otwp")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4apm6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_in6dn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s835d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0iur")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_puklt")
+}],
+"loop": true,
+"name": &"idle_front",
+"speed": 5.0
+}]
+
+[node name="npc_20" type="CharacterBody2D"]
+script = ExtResource("1_v0eb7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4n8i8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_4apm6")
+animation = &"idle_front"
+frame = 3
+frame_progress = 1.0
