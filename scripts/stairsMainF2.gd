@@ -1,5 +1,6 @@
 extends Area2D
 
+
 var teleport_target_location = Vector2(152, -948)
 
 
