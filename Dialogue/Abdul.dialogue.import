@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://tunvhpkloem6"
+path="res://.godot/imported/Abdul.dialogue-f9e5346a01dcc2a47d6e88393e3378ff.tres"
+
+[deps]
+
+source_file="res://Dialogue/Abdul.dialogue"
+dest_files=["res://.godot/imported/Abdul.dialogue-f9e5346a01dcc2a47d6e88393e3378ff.tres"]
+
+[params]
+
+defaults=true

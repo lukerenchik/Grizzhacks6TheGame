@@ -1,0 +1,9 @@
+~ this_is_a_node_title
+
+Thomas: Salutations! What's going on in your world?
+- Ask About Project
+	Thomas: We are building a social platform that helps kitchens with leftovers supply food to those in need!
+- End the conversation => END
+Thomas: Take Care!
+
+=> END

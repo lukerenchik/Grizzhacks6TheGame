@@ -1,0 +1,9 @@
+~ this_is_a_node_title
+
+Leon: [[Hi|Hello|Howdy]].
+- Ask About Your Project
+	Leon: We are creating an app to generate flashcards by reading.
+- End the conversation => END
+Leon: 
+
+=> END

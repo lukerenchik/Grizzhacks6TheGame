@@ -1,0 +1,13 @@
+~ this_is_a_node_title
+
+Abdul: "Hello"
+- Ask About Project
+	Abdul: Well, I don't really know how to explain it.
+	Abdul: I often ramble.
+	Abdul: I'll try to make it concise.
+	Abdul: Try.
+	Abdul: We are building infrastructure to support the creation of generic brands in third world countries, we want to help fight the inflation plaguing many regions of the world like Lebanon.
+- End the conversation => END
+Abdul: Seya
+
+=> END

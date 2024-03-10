@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bieewo7lat3ih"
+path="res://.godot/imported/Kunal.dialogue-2de64f5a1895b1e034bbb587382e26d6.tres"
+
+[deps]
+
+source_file="res://Dialogue/Kunal.dialogue"
+dest_files=["res://.godot/imported/Kunal.dialogue-2de64f5a1895b1e034bbb587382e26d6.tres"]
+
+[params]
+
+defaults=true

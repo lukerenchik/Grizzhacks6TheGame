@@ -1,0 +1,9 @@
+~ this_is_a_node_title
+
+Jobin: [[Hi|Hello|Howdy]].
+- Ask About Project
+	Jobin: We are building an investment strategy app to help people make better financial decisions.
+- End the conversation => END
+Jobin: Sayanara
+
+=> END

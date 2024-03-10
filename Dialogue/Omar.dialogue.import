@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://b8c76du5dasgd"
+path="res://.godot/imported/Omar.dialogue-998f66968d2a929219be6181671cd695.tres"
+
+[deps]
+
+source_file="res://Dialogue/Omar.dialogue"
+dest_files=["res://.godot/imported/Omar.dialogue-998f66968d2a929219be6181671cd695.tres"]
+
+[params]
+
+defaults=true

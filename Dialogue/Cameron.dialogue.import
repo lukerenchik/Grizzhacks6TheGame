@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://1j08g55mm3em"
+path="res://.godot/imported/Cameron.dialogue-86226920426867e05e58334d9660ff2a.tres"
+
+[deps]
+
+source_file="res://Dialogue/Cameron.dialogue"
+dest_files=["res://.godot/imported/Cameron.dialogue-86226920426867e05e58334d9660ff2a.tres"]
+
+[params]
+
+defaults=true

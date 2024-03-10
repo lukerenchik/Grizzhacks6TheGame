@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bnn0cgrqgjbra"
+path="res://.godot/imported/Eli.dialogue-626ec649e780198eb882c64d0149754f.tres"
+
+[deps]
+
+source_file="res://Dialogue/Eli.dialogue"
+dest_files=["res://.godot/imported/Eli.dialogue-626ec649e780198eb882c64d0149754f.tres"]
+
+[params]
+
+defaults=true
