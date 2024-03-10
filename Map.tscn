@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://cror8rqg6tgur"]
+[gd_scene load_steps=38 format=3 uid="uid://cror8rqg6tgur"]
 
 [ext_resource type="Texture2D" uid="uid://dwnlxges67bf2" path="res://Modern_Office_Revamped/1_Room_Builder_Office/Room_Builder_Office_16x16.png" id="1_xp63w"]
 [ext_resource type="Texture2D" uid="uid://con7dkpxyt2k0" path="res://Modern_Office_Revamped/2_Modern_Office_Black_Shadow/Modern_Office_Black_Shadow.png" id="2_yhynh"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://b1a7apmkotj0d" path="res://moderninteriors-win/1_Interiors/16x16/Theme_Sorter/14_Basement_16x16.png" id="8_n4jtv"]
 [ext_resource type="Texture2D" uid="uid://cgdihmhcvu1m6" path="res://moderninteriors-win/1_Interiors/16x16/Theme_Sorter/20_Japanese_interiors.png" id="9_pwqka"]
 [ext_resource type="Texture2D" uid="uid://bvsdy5kyk3y80" path="res://moderninteriors-win/1_Interiors/16x16/Theme_Sorter/12_Kitchen_16x16.png" id="11_4jb6b"]
+[ext_resource type="PackedScene" uid="uid://0wf7w3rgxbk6" path="res://scene/player.tscn" id="16_2kmvd"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_a8bpa"]
 tile_data = PackedInt32Array(0, 65536, 11, 65536, 327680, 11, 131072, 327680, 11, 196608, 65536, 805306379)
@@ -19736,15 +19737,14 @@ layer_5/z_index = -1
 layer_5/tile_data = PackedInt32Array(-7274493, 327680, 11, -7208961, 327680, 11, -6422525, 327680, 11, -6553609, 327680, 11, -6356998, 327680, 11, -5177357, 327680, 11, -5111818, 327680, 11, -4849674, 327680, 11, -5046278, 327680, 11, -5046276, 327680, 11, -5111812, 327680, 11, -5373965, 327680, 11, -5701645, 327680, 11, -5505037, 327680, 11, -5177322, 327680, 11, -4849645, 327680, 11, -4849661, 327680, 11, -4259837, 327680, 11, -4259821, 327680, 11, -3866602, 327680, 11, -3866605, 327680, 11, -3866624, 327680, 11, -3145728, 327680, 11, -3145709, 327680, 11, -3670016, 327680, 11, -4915200, 327680, 11, -5505033, 327680, 11, -6029325, 327680, 11, -5832717, 327680, 11, -5832713, 327680, 11, -6029321, 327680, 11, -6553601, 327680, 11, -5373961, 327680, 11, -5701641, 327680, 11, -65545, 327680, 11, 131063, 327680, 11, 655397, 327680, 11, 655387, 327680, 11, 65563, 327680, 11, -131035, 327680, 11, 3276957, 327680, 11, 4063389, 327680, 11, 4063379, 327680, 11, 3473555, 327680, 11, 3473530, 327680, 11, 3473527, 327680, 11, 3670135, 327680, 11, 3670138, 327680, 11, 3932265, 327680, 11, 3932246, 327680, 11, 3276886, 327680, 11, 3276898, 327680, 11, 3276909, 327680, 11, 2818157, 327680, 11, 2818146, 327680, 11, -786241, 327680, 11, -786251, 327680, 11, -1376075, 327680, 11, -1572673, 327680, 11, -1572721, 327680, 11, -1376117, 327680, 11, -1572732, 327680, 11, -917365, 327680, 11, -917384, 327680, 11, -1572744, 327680, 11, -2031484, 327680, 11, -2031473, 327680, 11, -1376103, 327680, 11, -1376100, 327680, 11, -1179492, 327680, 11, -1179495, 327680, 11, -4390781, 327680, 11, -4128637, 327680, 11, -4456304, 327680, 11, -5111664, 327680, 11, -5111688, 327680, 11, -4390818, 327680, 11, -4128688, 327680, 11, -4915120, 327680, 11, -4915110, 327680, 11, -5636006, 327680, 11, -5636013, 327680, 11, -6291373, 327680, 11, -6291366, 327680, 11, -6946726, 327680, 11, -6946733, 327680, 11, -7667622, 327680, 11, -7667629, 327680, 11, -7995302, 327680, 11, -7995298, 327680, 11)
 metadata/_edit_group_ = true
 
-
-[node name="player" parent="." instance=ExtResource("10_a2b3c")]
-
-[node name="Camera2D" type="Camera2D" parent="player"]
-zoom = Vector2(5.07, 5.07)
-
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 physics_material_override = SubResource("PhysicsMaterial_6c4lp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("ConvexPolygonShape2D_juj12")
 
+[node name="player" parent="." instance=ExtResource("16_2kmvd")]
+z_index = 4
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+zoom = Vector2(5.25, 5.25)
